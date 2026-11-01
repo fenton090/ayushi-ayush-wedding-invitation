@@ -29,6 +29,26 @@ export default function InvitationCover({ onOpen }: InvitationCoverProps) {
       <motion.div initial={{ y: 0 }} animate={{ y: "-100%" }} transition={{ delay: 1.0, duration: 1.8, ease: [0.65, 0, 0.35, 1] }} className="absolute inset-0 -z-10 bg-[#2A211D]" />
     </div>}
     <motion.div animate={opening ? { y: "-100%" } : { y: 0 }} transition={{ duration: 1.8, delay: opening ? 0.85 : 0, ease: [0.65, 0, 0.35, 1] }} className="relative z-10 flex min-h-screen w-full items-center justify-center px-6 text-center text-[#FFF8F2]"><div className="flex w-full max-w-2xl flex-col items-center justify-center px-8 py-14 sm:px-16 sm:py-20">
+
+      <div className="ganesha-invocation">
+        <img
+          src="/images/ganesha.png"
+          alt="Lord Ganesha"
+          width={90}
+          height={90}
+        />
+
+        <h2>॥ श्री गणेशाय नमः ॥</h2>
+
+        {/* <p>
+          वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।
+          <br />
+          निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
+        </p> */}
+
+        <span>WITH THE BLESSINGS OF LORD GANESHA</span>
+      </div>
+
       <motion.p initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .35, duration: .7 }} className="w-full text-center text-xs sm:text-sm font-medium uppercase tracking-[.5em] text-white/95 drop-shadow-lg">You are invited</motion.p>
       <motion.div initial={{ opacity: 0, scale: .82 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: .55, duration: .9, ease: "easeOut" }} className="relative mx-auto mt-8 flex h-32 w-44 items-center justify-center sm:h-36 sm:w-48" aria-label="A R monogram"><div className="relative flex items-center justify-center -translate-x-1"><span className="font-serif text-[92px] font-light leading-none tracking-[-0.16em] text-[#F3D6C4] drop-shadow-lg sm:text-[108px]">A</span><span className="-ml-3 font-serif text-[92px] font-light leading-none tracking-[-0.16em] text-[#D8A98A]/95 drop-shadow-lg sm:text-[108px]">A</span></div><span className="absolute bottom-0 left-1/2 h-px w-14 -translate-x-1/2 bg-[#E7CDBE]/70" /></motion.div>
       <motion.p initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.05, duration: .8 }} className="mt-6 w-full text-center font-script text-3xl leading-none text-[#F2DED2] sm:text-4xl">to celebrate our forever</motion.p>

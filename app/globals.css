@@ -52,3 +52,17 @@
   background: #D8A98A;
   color: #3B2922;
 }
+
+.ganesha-invocation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-bottom: 32px;
+  color: #e8c99d;
+}
+
+.ganesha-invocation img {
+  object-fit: contain;
+}
