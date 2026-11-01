@@ -87,11 +87,42 @@ export default function Hero() {
             Ayush + Ayushi ♡
           </p>
 
-          <h1 className="mt-5 font-serif text-3xl sm:text-4xl font-light leading-[1.1] tracking-wide text-[#593727]">
+          <h1 className="mt-4 font-serif text-3xl sm:text-4xl font-light leading-[1.1] tracking-wide text-[#593727]">
             WE
             <span className="block">ARE GETTING</span>
             <span className="block">MARRIED</span>
           </h1>
+
+          {/* Family names */}
+          <div className="mt-6 mx-auto w-full max-w-md">
+
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <span className="h-px w-10 bg-[#A87942]/50" />
+              <Heart size={11} className="text-[#A87942]" />
+              <span className="h-px w-10 bg-[#A87942]/50" />
+            </div>
+
+            {/* Grandparents */}
+            <p className="text-[8px] sm:text-[9px] tracking-[0.25em] uppercase text-[#906443]">
+              With the blessings of
+            </p>
+
+            <p className="mt-2 font-serif text-sm sm:text-base text-[#593727]">
+              Late Mahavir Prasad Goyal & Late Kanta Devi
+            </p>
+
+            {/* Parents */}
+            <div className="mt-4">
+              <p className="text-[8px] sm:text-[9px] tracking-[0.25em] uppercase text-[#906443]">
+                Along with their loving parents
+              </p>
+
+              <p className="mt-2 font-serif text-sm sm:text-base text-[#593727]">
+                Mr. Anup Goyal & Mrs. Babita Goyal
+              </p>
+            </div>
+
+          </div>
 
           <div className="my-5 flex items-center justify-center gap-3 text-[#A87942]">
             <span className="h-px w-10 bg-[#A87942]/60" />

@@ -84,7 +84,7 @@ export const weddingConfig = {
     id: "wedding",
     name: "Wedding Ceremony",
     date: "2026-12-11",
-    time: "07:00 PM onwards",
+    time: "",
     BaraatTime: "06:00 PM - 08:00 PM",
     ReceptionTime: "08:00 PM onwards",
     VarmalaTime: "09:00 PM onwards",
