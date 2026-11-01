@@ -4,6 +4,7 @@ export interface WeddingEvent {
   date: string;
   time: string;
   BaraatTime?: string;
+  ReceptionTime? : string;
   VarmalaTime?: string;
   location: string;
   addressDetails?: string;
@@ -45,7 +46,7 @@ export const weddingConfig = {
     addressDetails: "Fatehabad Rd, near Narayanam Garden, Pushpanjali Phase 3, Tora, Tajganj, Agra",
     dressCode: "Yellow Indian Ethnic Wear",
     googleMapsUrl: "https://maps.app.goo.gl/psoDj4fh1Hi6s7D37?g_st=aw",
-    image: "/images/event-haldi.jpg",
+    image: "/images/event-haldi.png",
     iconName: "sparkles",
     description:
       "A joyful traditional Haldi ceremony filled with blessings, laughter, and beautiful moments with family and friends.",
@@ -59,7 +60,7 @@ export const weddingConfig = {
     addressDetails: "Fatehabad Rd, near Narayanam Garden, Pushpanjali Phase 3, Tora, Tajganj, Agra",
     dressCode: "Indian Ethnic Wear",
     googleMapsUrl: "https://maps.app.goo.gl/psoDj4fh1Hi6s7D37?g_st=aw",
-    image: "/images/event-lagun-tika.jpg",
+    image: "/images/event-lagun-tika.png",
     iconName: "flower",
     description:
       "An elegant celebration of beautiful Mehendi designs, traditions, music, and joyful moments with loved ones.",
@@ -74,7 +75,7 @@ export const weddingConfig = {
     dressCode: "Indian Ethnic Wear Only",
     googleMapsUrl:
       "https://maps.app.goo.gl/psoDj4fh1Hi6s7D37?g_st=aw",
-    image: "/images/event-sangeeth.jpg",
+    image: "/images/event-sangeeth.png",
     iconName: "sparkles",
     description:
       "An evening filled with music, dance, laughter, and celebratory festive Indian ethnic attire.",
@@ -84,31 +85,32 @@ export const weddingConfig = {
     name: "Wedding Ceremony",
     date: "2026-12-11",
     time: "07:00 PM onwards",
-    BaraatTime: "06:00 PM onwards",
+    BaraatTime: "06:00 PM - 08:00 PM",
+    ReceptionTime: "08:00 PM onwards",
     VarmalaTime: "09:00 PM onwards",
     location: "Keyaan Saloni",
     addressDetails: "Fatehabad Rd, Kalal Kheria, Agra",
     googleMapsUrl:
       "https://maps.app.goo.gl/evEUNk2fSq3hZrFc6?g_st=aw",
-    image: "/images/event-wedding.jpg",
+    image: "/images/event-wedding.png",
     iconName: "ring",
     description:
       "The sacred wedding ceremony and Muhurtham (12:10 PM – 12:34 PM), followed by a traditional feast and blessings.",
   },
-  {
-    id: "reception",
-    name: "Wedding Reception",
-    date: "2026-12-11",
-    time: "8:00 PM onwards",
-    location: "Keyaan Saloni",
-    addressDetails: "Fatehabad Rd, Kalal Kheria, Agra",
-    googleMapsUrl:
-      "https://maps.app.goo.gl/evEUNk2fSq3hZrFc6?g_st=aw",
-    image: "/images/event-reception.jpg",
-    iconName: "glass",
-    description:
-      "A grand celebratory evening dinner to share joy and celebrate the beginning of our newlyweds' journey together.",
-  },
+  // {
+  //   id: "reception",
+  //   name: "Wedding Reception",
+  //   date: "2026-12-11",
+  //   time: "8:00 PM onwards",
+  //   location: "Keyaan Saloni",
+  //   addressDetails: "Fatehabad Rd, Kalal Kheria, Agra",
+  //   googleMapsUrl:
+  //     "https://maps.app.goo.gl/evEUNk2fSq3hZrFc6?g_st=aw",
+  //   image: "/images/event-reception.jpg",
+  //   iconName: "glass",
+  //   description:
+  //     "A grand celebratory evening dinner to share joy and celebrate the beginning of our newlyweds' journey together.",
+  // },
   ] as WeddingEvent[],
   storyMoments: [
     { id: "1", caption: "Childish", title: "Where The Love Began", image: "/images/img-9.jpg", rotation: "-rotate-3" },

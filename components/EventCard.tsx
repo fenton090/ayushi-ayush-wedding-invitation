@@ -92,6 +92,11 @@ export default function EventCard({ event, index }: EventCardProps) {
                 Baraat: {event.BaraatTime}
               </span>
             )}
+            {event.ReceptionTime && (
+              <span className="block text-[11px] text-amber-900 font-semibold mt-0.5">
+                Reception: {event.ReceptionTime}
+              </span>
+            )}
             {event.VarmalaTime && (
               <span className="block text-[11px] text-amber-900 font-semibold mt-0.5">
                 Varmala: {event.VarmalaTime}
