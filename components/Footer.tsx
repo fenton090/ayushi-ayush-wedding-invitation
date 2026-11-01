@@ -15,12 +15,12 @@ export default function Footer() {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 1.2 }}>
           <h2 className="font-script text-5xl sm:text-6xl lg:text-7xl text-amber-100/90 font-normal leading-tight drop-shadow-md">With lots of love</h2>
           <div className="my-6 flex items-center justify-center space-x-3 text-white/50"><span className="h-px w-16 bg-white/20"></span><Heart size={16} className="fill-amber-200/80 text-amber-200/80" /><span className="h-px w-16 bg-white/20"></span></div>
-          <p className="font-serif text-3xl sm:text-4xl tracking-widest text-[#FAF7F2]">Ayush <span className="text-amber-700/90 mx-2 font-sans text-xl">&amp;</span> Ayushi</p>
+          <p className="font-serif text-3xl sm:text-4xl tracking-widest text-[#FAF7F2]">Ayushi <span className="text-amber-700/90 mx-2 font-sans text-xl">&amp;</span> Ayush</p>
           <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 space-y-4 sm:space-y-0">
-            <p className="font-light">© 2027 Ayush &amp; Ayushi. All rights reserved.</p>
+            <p className="font-light">© 2027 Ayushi &amp; Ayush. All rights reserved.</p>
             <div className="flex items-center space-x-6">
               <a href={`mailto:${weddingConfig.contactEmail}`} className="hover:text-white transition-colors flex items-center space-x-1" aria-label="Email couple"><Mail size={14} /><span>Contact Us</span></a>
-              <button onClick={() => { if (navigator.share) { navigator.share({ title: "Ayush & Ayushi Wedding", url: window.location.href }); } else { navigator.clipboard.writeText(window.location.href); alert("Wedding invitation link copied to clipboard!"); } }} className="hover:text-white transition-colors flex items-center space-x-1"><Share2 size={14} /><span>Share Invitation</span></button>
+              <button onClick={() => { if (navigator.share) { navigator.share({ title: "Ayushi & Ayush Wedding", url: window.location.href }); } else { navigator.clipboard.writeText(window.location.href); alert("Wedding invitation link copied to clipboard!"); } }} className="hover:text-white transition-colors flex items-center space-x-1"><Share2 size={14} /><span>Share Invitation</span></button>
             </div>
           </div>
         </motion.div>

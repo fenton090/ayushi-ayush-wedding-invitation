@@ -38,6 +38,20 @@ export const weddingConfig = {
   backgroundAudio: "/audio/background-music.mp3",
   events: [
     {
+      id: "Lagun Tika",
+      name: "Lagun Tika Ceremony",
+      date: "2026-12-09",
+      time: "9:30 AM",
+      location: "Vedantam",
+      addressDetails: "D203, manglam shila, Dayalbagh, Agra",
+      dressCode: "Indian Ethnic Wear",
+      googleMapsUrl: "https://maps.app.goo.gl/JZq4Swkkz2gu26fy8?g_st=ic",
+      image: "/images/event-lagun-tika.png",
+      iconName: "flower",
+      description:
+        "An elegant celebration of beautiful Mehendi designs, traditions, music, and joyful moments with loved ones.",
+    },
+    {
     id: "haldi",
     name: "Haldi Ceremony",
     date: "2026-12-10",
@@ -52,22 +66,8 @@ export const weddingConfig = {
       "A joyful traditional Haldi ceremony filled with blessings, laughter, and beautiful moments with family and friends.",
   },
   {
-    id: "Lagun Tika",
-    name: "Lagun Tika Ceremony",
-    date: "2026-12-10",
-    time: "07:00 PM",
-    location: "Vedantam",
-    addressDetails: "Fatehabad Rd, near Narayanam Garden, Pushpanjali Phase 3, Tora, Tajganj, Agra",
-    dressCode: "Indian Ethnic Wear",
-    googleMapsUrl: "https://maps.app.goo.gl/psoDj4fh1Hi6s7D37?g_st=aw",
-    image: "/images/event-lagun-tika.png",
-    iconName: "flower",
-    description:
-      "An elegant celebration of beautiful Mehendi designs, traditions, music, and joyful moments with loved ones.",
-  },
-  {
     id: "Sangeet",
-    name: "Sangeeth Ceremony",
+    name: "Sangeet Ceremony",
     date: "2026-12-10",
     time: "8:00 PM onwards",
     location: "Vedantam",

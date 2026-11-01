@@ -84,7 +84,7 @@ export default function Hero() {
           </p>
 
           <p className="mt-4 font-script text-2xl sm:text-3xl text-[#873B2B]">
-            Ayush + Ayushi ♡
+            Ayushi + Ayush ♡
           </p>
 
           <h1 className="mt-4 font-serif text-3xl sm:text-4xl font-light leading-[1.1] tracking-wide text-[#593727]">
@@ -108,7 +108,7 @@ export default function Hero() {
             </p>
 
             <p className="mt-2 font-serif text-sm sm:text-base text-[#593727]">
-              Late Mahavir Prasad Goyal & Late Kanta Devi
+              Mr Prahlad Kumar & Mrs Jainmati Devi
             </p>
 
             {/* Parents */}
@@ -118,7 +118,7 @@ export default function Hero() {
               </p>
 
               <p className="mt-2 font-serif text-sm sm:text-base text-[#593727]">
-                Mr. Anup Goyal & Mrs. Babita Goyal
+                Mr. Raju Agarwal & Mrs. Seema Agarwal
               </p>
             </div>
 
