@@ -14,6 +14,8 @@ export interface WeddingEvent {
   description?: string;
 }
 
+import { galleryPhotos as generatedGalleryPhotos } from "./galleryPhotos.generated";
+
 export interface StoryMoment { id: string; caption: string; title: string; image: string; rotation: string; }
 export interface GalleryPhoto { id: string; src: string; alt: string; title: string; caption?: string; }
 export interface AccommodationOption { name: string; category: string; distance: string; address: string; phone?: string; website?: string; }
@@ -114,20 +116,22 @@ export const weddingConfig = {
     { id: "3", caption: "sweet moments", title: "The Little Things", image: "/images/img-3.jpg", rotation: "-rotate-2" },
     { id: "4", caption: "forever", title: "Holding On Forever", image: "/images/img-4.jpg", rotation: "rotate-3" },
   ] as StoryMoment[],
-  galleryPhotos: [
-    { id: "g1", src: "/images/img-1.jpg", alt: "Ayushi and Ayush together", title: "Together", caption: "A moment we will always keep close." },
-    { id: "g2", src: "/images/img-2.jpg", alt: "Ayushi and Ayush holding hands", title: "Holding On Forever", caption: "Two hands, one beautiful journey." },
-    { id: "g3", src: "/images/img-3.jpg", alt: "Ayushi and Ayush sharing a sweet moment", title: "Sweet Moments", caption: "The little moments that mean everything." },
-    { id: "g4", src: "/images/img-4.jpg", alt: "Childhood memory", title: "A Memory to Treasure", caption: "A glimpse into the story behind us." },
-    { id: "g5", src: "/images/img-5.jpg", alt: "Ayushi and Ayush together", title: "Together", caption: "A moment we will always keep close." },
-    { id: "g6", src: "/images/img-6.jpg", alt: "Ayushi and Ayush holding hands", title: "Holding On Forever", caption: "Two hands, one beautiful journey." },
-    { id: "g7", src: "/images/img-7.jpg", alt: "Ayushi and Ayush sharing a sweet moment", title: "Sweet Moments", caption: "The little moments that mean everything." },
-    { id: "g8", src: "/images/img-8.jpg", alt: "Childhood memory", title: "A Memory to Treasure", caption: "A glimpse into the story behind us." },
-    { id: "g9", src: "/images/img-9.jpg", alt: "Ayushi and Ayush together", title: "Together", caption: "A moment we will always keep close." },
-    { id: "g10", src: "/images/img-10.jpg", alt: "Ayushi and Ayush holding hands", title: "Holding On Forever", caption: "Two hands, one beautiful journey." },
-    { id: "g11", src: "/images/img-11.jpg", alt: "Ayushi and Ayush sharing a sweet moment", title: "Sweet Moments", caption: "The little moments that mean everything." },
-    { id: "g12", src: "/images/img-12.jpg", alt: "Childhood memory", title: "A Memory to Treasure", caption: "A glimpse into the story behind us." },
-  ] as GalleryPhoto[],
+  galleryPhotos: generatedGalleryPhotos as GalleryPhoto[],
+  
+  // galleryPhotos: [
+  //   { id: "g1", src: "/images/img-1.jpg", alt: "Ayushi and Ayush together", title: "Together", caption: "A moment we will always keep close." },
+  //   { id: "g2", src: "/images/img-2.jpg", alt: "Ayushi and Ayush holding hands", title: "Holding On Forever", caption: "Two hands, one beautiful journey." },
+  //   { id: "g3", src: "/images/img-3.jpg", alt: "Ayushi and Ayush sharing a sweet moment", title: "Sweet Moments", caption: "The little moments that mean everything." },
+  //   { id: "g4", src: "/images/img-4.jpg", alt: "Childhood memory", title: "A Memory to Treasure", caption: "A glimpse into the story behind us." },
+  //   { id: "g5", src: "/images/img-5.jpg", alt: "Ayushi and Ayush together", title: "Together", caption: "A moment we will always keep close." },
+  //   { id: "g6", src: "/images/img-6.jpg", alt: "Ayushi and Ayush holding hands", title: "Holding On Forever", caption: "Two hands, one beautiful journey." },
+  //   { id: "g7", src: "/images/img-7.jpg", alt: "Ayushi and Ayush sharing a sweet moment", title: "Sweet Moments", caption: "The little moments that mean everything." },
+  //   { id: "g8", src: "/images/img-8.jpg", alt: "Childhood memory", title: "A Memory to Treasure", caption: "A glimpse into the story behind us." },
+  //   { id: "g9", src: "/images/img-9.jpg", alt: "Ayushi and Ayush together", title: "Together", caption: "A moment we will always keep close." },
+  //   { id: "g10", src: "/images/img-10.jpg", alt: "Ayushi and Ayush holding hands", title: "Holding On Forever", caption: "Two hands, one beautiful journey." },
+  //   { id: "g11", src: "/images/img-11.jpg", alt: "Ayushi and Ayush sharing a sweet moment", title: "Sweet Moments", caption: "The little moments that mean everything." },
+  //   { id: "g12", src: "/images/img-12.jpg", alt: "Childhood memory", title: "A Memory to Treasure", caption: "A glimpse into the story behind us." },
+  // ] as GalleryPhoto[],
   footerText: "With lots of love",
   contactEmail: "celebrate@aparna-rohit.com",
 };
