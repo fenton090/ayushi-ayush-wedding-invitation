@@ -42,7 +42,7 @@ export const weddingConfig = {
       name: "Lagan Ceremony",
       date: "2026-12-09",
       time: "9:30 AM",
-      location: "Vedantam",
+      location: "Manglam Shila",
       addressDetails: "D203, manglam shila, Dayalbagh, Agra",
       dressCode: "Indian Ethnic Wear",
       googleMapsUrl: "https://maps.app.goo.gl/JZq4Swkkz2gu26fy8?g_st=ic",
