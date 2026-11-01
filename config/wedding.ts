@@ -65,10 +65,10 @@ export const weddingConfig = {
       "An elegant celebration of beautiful Mehendi designs, traditions, music, and joyful moments with loved ones.",
   },
   {
-    id: "sangeeth",
+    id: "Sangeet",
     name: "Sangeeth Ceremony",
     date: "2026-12-10",
-    time: "9:00 PM – 11:00 PM",
+    time: "8:00 PM onwards",
     location: "Vedantam",
     addressDetails: "Fatehabad Rd, near Narayanam Garden, Pushpanjali Phase 3, Tora, Tajganj, Agra",
     dressCode: "Indian Ethnic Wear Only",
@@ -98,8 +98,8 @@ export const weddingConfig = {
   {
     id: "reception",
     name: "Wedding Reception",
-    date: "2026-12-12",
-    time: "6:00 AM onwards",
+    date: "2026-12-11",
+    time: "8:00 PM onwards",
     location: "Keyaan Saloni",
     addressDetails: "Fatehabad Rd, Kalal Kheria, Agra",
     googleMapsUrl:

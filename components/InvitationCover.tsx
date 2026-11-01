@@ -9,12 +9,23 @@ interface InvitationCoverProps { onOpen: () => void; }
 export default function InvitationCover({ onOpen }: InvitationCoverProps) {
   const [visible, setVisible] = useState(true);
   const [opening, setOpening] = useState(false);
-  useEffect(() => { document.body.style.overflow = visible ? "hidden" : ""; if (visible) window.scrollTo(0, 0); return () => { document.body.style.overflow = ""; }; }, [visible]);
+  useEffect(() => {
+    if (visible) {
+      window.scrollTo(0, 0);
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [visible]);
+
   const flowers = useMemo(() => Array.from({ length: 34 }, (_, i) => ({ left: `${(i * 31 + 7) % 101}%`, size: 9 + (i % 5) * 3, duration: 5.8 + (i % 7) * 0.55, delay: (i % 12) * 0.25, drift: -70 + (i % 15) * 10, rotate: -180 + (i % 12) * 30, scale: 0.72 + (i % 4) * 0.12 })), []);
   const openInvitation = () => { if (opening) return; setOpening(true); window.dispatchEvent(new Event("wedding:open")); onOpen(); window.setTimeout(() => { setVisible(false); requestAnimationFrame(() => window.scrollTo(0, 0)); }, 5200); };
-  return <AnimatePresence>{visible && <motion.div initial={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.4, ease: "easeInOut" }} className="fixed inset-0 z-[100] overflow-hidden bg-[#2A211D]">
-    <motion.div initial={{ scale: 1.08 }} animate={{ scale: 1 }} transition={{ duration: 12, ease: "linear" }} className="absolute inset-0"><Image src="/images/gallery/img11.jpg" alt="Aparna and Rohit" fill priority sizes="100vw" className="object-cover" /></motion.div>
-    <div className="absolute inset-0 bg-[#211814]/45" /><div className="absolute inset-0 bg-gradient-to-b from-black/35 via-transparent to-black/65" />
+  return <AnimatePresence>{visible && <motion.div initial={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.4, ease: "easeInOut" }} className="fixed inset-0 z-[100] overflow-x-hidden overflow-y-auto overscroll-y-contain bg-[#2A211D]">
+    <motion.div initial={{ scale: 1.08 }} animate={{ scale: 1 }} transition={{ duration: 12, ease: "linear" }} className="fixed inset-0 pointer-events-none">
+      <Image src="/images/gallery/img11.jpg" alt="Aparna and Rohit" fill priority sizes="100vw" className="object-cover" />
+    </motion.div>
+    <div className="fixed inset-0 pointer-events-none bg-[#211814]/45" /><div className="fixed inset-0 pointer-events-none bg-gradient-to-b from-black/35 via-transparent to-black/65" />
     {opening && <div className="pointer-events-none fixed inset-0 z-40 overflow-hidden" aria-hidden="true">
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: [0, 0.18, 0.3, 0.12] }} transition={{ duration: 5.2, ease: "easeInOut" }} className="absolute inset-0 bg-[#F2E2D7]" />
       {flowers.map((flower, index) => <motion.span key={index} initial={{ y: "-14vh", x: 0, rotate: flower.rotate, scale: flower.scale, opacity: 0 }} animate={{ y: "112vh", x: flower.drift, rotate: flower.rotate + 360, scale: flower.scale, opacity: [0, 0.9, 0.88, 0.68, 0] }} transition={{ duration: flower.duration, delay: flower.delay, ease: "linear" }} className="absolute top-0" style={{ left: flower.left, width: flower.size, height: flower.size, transformOrigin: "center" }}>
@@ -28,7 +39,7 @@ export default function InvitationCover({ onOpen }: InvitationCoverProps) {
       </div>
       <motion.div initial={{ y: 0 }} animate={{ y: "-100%" }} transition={{ delay: 1.0, duration: 1.8, ease: [0.65, 0, 0.35, 1] }} className="absolute inset-0 -z-10 bg-[#2A211D]" />
     </div>}
-    <motion.div animate={opening ? { y: "-100%" } : { y: 0 }} transition={{ duration: 1.8, delay: opening ? 0.85 : 0, ease: [0.65, 0, 0.35, 1] }} className="relative z-10 flex min-h-screen w-full items-center justify-center px-6 text-center text-[#FFF8F2]"><div className="flex w-full max-w-2xl flex-col items-center justify-center px-8 py-14 sm:px-16 sm:py-20">
+    <motion.div animate={opening ? { y: "-100%" } : { y: 0 }} transition={{ duration: 1.8, delay: opening ? 0.85 : 0, ease: [0.65, 0, 0.35, 1] }} className="relative z-10 flex min-h-full w-full items-center justify-center px-6 py-6 text-center text-[#FFF8F2] sm:min-h-screen sm:py-0"><div className="flex w-full max-w-2xl flex-col items-center justify-center px-8 py-14 sm:px-16 sm:py-20">
 
       <div className="ganesha-invocation">
         <img
