@@ -78,7 +78,7 @@ export default function Hero() {
           </p>
 
           <p className="mt-4 font-script text-2xl sm:text-3xl text-[#873B2B]">
-            Ayushi + Ayush ♡
+            Ayush + Ayushi ♡
           </p>
 
           <h1 className="mt-5 font-serif text-3xl sm:text-4xl font-light leading-[1.1] tracking-wide text-[#593727]">
