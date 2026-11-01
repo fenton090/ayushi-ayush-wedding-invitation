@@ -23,7 +23,11 @@ export default function InvitationCover({ onOpen }: InvitationCoverProps) {
   const openInvitation = () => { if (opening) return; setOpening(true); window.dispatchEvent(new Event("wedding:open")); onOpen(); window.setTimeout(() => { setVisible(false); requestAnimationFrame(() => window.scrollTo(0, 0)); }, 5200); };
   return <AnimatePresence>{visible && <motion.div initial={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.4, ease: "easeInOut" }} className="fixed inset-0 z-[100] overflow-x-hidden overflow-y-auto overscroll-y-contain bg-[#2A211D]">
     <motion.div initial={{ scale: 1.08 }} animate={{ scale: 1 }} transition={{ duration: 12, ease: "linear" }} className="fixed inset-0 pointer-events-none">
-      <Image src="/images/gallery/img11.jpg" alt="Aparna and Rohit" fill priority sizes="100vw" className="object-cover" />
+      <source
+        media="(max-width: 767px)"
+        srcSet="/images/img-10.jpg"
+      />
+      <Image src="/images/img-11.jpg" alt="Ayush and Ayushi" sizes="100vw" fill className="h-full w-full object-cover object-center" />
     </motion.div>
     <div className="fixed inset-0 pointer-events-none bg-[#211814]/45" /><div className="fixed inset-0 pointer-events-none bg-gradient-to-b from-black/35 via-transparent to-black/65" />
     {opening && <div className="pointer-events-none fixed inset-0 z-40 overflow-hidden" aria-hidden="true">

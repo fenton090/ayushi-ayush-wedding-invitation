@@ -12,12 +12,18 @@ export default function Hero() {
       className="relative w-full min-h-screen overflow-hidden bg-[#2A211D] flex items-center justify-center px-4 py-24 sm:py-28"
     >
       {/* Traditional courtyard background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/images/hero-courtyard.png')",
-        }}
-      />
+      <picture className="absolute inset-0 z-0">
+        <source
+          media="(max-width: 767px)"
+          srcSet="/images/hero-courtyard-mobile.png"
+        />
+
+        <img
+          src="/images/hero-courtyard.png"
+          alt="Traditional wedding courtyard"
+          className="h-full w-full object-cover object-center"
+        />
+      </picture>
 
       {/* Soft overlay for contrast */}
       <div className="absolute inset-0 bg-[#211814]/35" />
