@@ -39,7 +39,7 @@ export const weddingConfig = {
   events: [
     {
       id: "Lagun Tika",
-      name: "Lagun Tika Ceremony",
+      name: "Lagan Ceremony",
       date: "2026-12-09",
       time: "9:30 AM",
       location: "Vedantam",
